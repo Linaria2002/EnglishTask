@@ -4,14 +4,11 @@
 # nltk.download('averaged_perceptron_tagger')
 
 # 助動詞があればそのwordとindexのタプルのリストを返す。
-def findModalVerbs(str):
-    morph = nltk.word_tokenize(str)
-    tagged = nltk.pos_tag(morph)
-    # print(tagged)
+def findModalVerbs(target_list):
     res = []
-    for i in range(len(tagged)):
-        if tagged[i][1] == "MD":
-            res.append((tagged[i][0], i))
+    for i in range(len(target_list)):
+        if target_list[i][1] == "MD":
+            res.append((target_list[i][0], i))
     return res
 
 if __name__ == '__main__':
