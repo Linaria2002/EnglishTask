@@ -5,10 +5,7 @@ nltk.download('averaged_perceptron_tagger')
 from nltk import CFG
 
 # 助動詞の時制を評価する
-def getMDTense(str):
-    text = nltk.word_tokenize(str)
-    tagged = nltk.pos_tag(text)
-
+def getMDTense(target_list):
     return "Present Tense"
 
 if __name__ == '__main__':
