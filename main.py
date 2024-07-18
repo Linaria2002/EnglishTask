@@ -1,9 +1,10 @@
-import accuracy as ACC
 import nltk
+from typing import List
 from nltk import pos_tag
 from nltk.tokenize import word_tokenize
 nltk.download("punkt")
 nltk.download('averaged_perceptron_tagger')
+import accuracy as ACC
 
 word_list = []
 target_list = []
@@ -13,9 +14,9 @@ def Input_text():
     while True:
         try:
             text = input("Enter your text> ")
+            word_list.append(text)
             if text == "":
                 break
-            word_list.append(text)
         except EOFError:
             break
     
@@ -25,10 +26,9 @@ def Input_text():
         target_words = pos_tag(words)
         target_list.append(target_words)
 
-    # Output
-    print(ACC.accuracy(target_list))
-    print(target_list)
+    return target_list
     
-
 if __name__ == "__main__":
-    Input_text()
+    list = Input_text()
+    #print(list)
+    ACC.accuracy(list)
