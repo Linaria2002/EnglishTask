@@ -1,0 +1,15 @@
+No modal verbs.
+No modal verbs.
+No modal verbs.
+can-pre
+can-past
+may-pre
+may-past
+will-fut
+will-past
+shall-pre
+should-pre
+should-past
+must-pre
+must-past
+
