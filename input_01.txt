@@ -1,6 +1,7 @@
 I am john.
 There is a trash can.
 She knows her mother's will.
+A contest is held in May.
 Can you speak English?
 I could go swim.
 May I have a seat?
@@ -11,5 +12,5 @@ Shall we dance.
 I should go to swim.
 We should have joined at the team.
 He must wake up at 9:00 AM.
-I must have given my mother a present.
+I had to give my mother a present.
 
